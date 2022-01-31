@@ -1,0 +1,150 @@
+.about-section {
+  background-image: linear-gradient(45deg, #ddd7cf, #d6bd9c);
+  width: 100%;
+  margin:0 auto;
+  height: 84vh;
+  padding-left: 3px;
+  padding-right: 3px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: space-evenly;mi
+  transition-duration: 1s;
+}
+.about-container{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+}
+.about-section h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family: 'Source Serif Pro', serif;
+  letter-spacing: 0.1rem;
+}
+.about-section p {
+  font-size: 1.18em;
+  font-family: 'Source Serif Pro', serif;
+  color: black;
+  font-weight: bolder;
+}
+.about-section-img-holder-div {
+  margin-right: 19%;
+  padding: 45px;
+  padding-left: 0px;
+}
+.about-section-img-1,
+.about-section-img-2,
+.about-section-img-mobile {
+  opacity: 85%;
+  border-radius: 4%;
+  filter: grayscale(10%);
+  transition-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+}
+.about-section-img-1 {
+  z-index: 2;
+  background: url("../../assets/img/about-img1.jpg");
+  background-size: cover;
+  width: 25vh;
+  height: 25vh;
+}
+.about-section-img-2 {
+  z-index: 1;
+  background: url("../../assets/img/about-img2.jpg");
+  position: relative;
+  top: -3%;
+  left: 50%;
+  background-size: cover;
+  width: 40vh;
+  height: 40vh;
+}
+.about-section-img-mobile {
+  display:none;
+}
+.about-section-text-holder-div {
+  align-self: center;
+  z-index: 3;
+  margin: 20px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section-img-holder-div {
+    display: none;
+  }
+  .about-section-text-holder-div {  
+    align-self: center;
+    z-index: 3;
+    opacity: 93%;
+    border-radius: 10px;
+    width: 40vh;
+    transition-duration: 1s;
+    background-size: cover;
+  }
+  .about-section-text-holder-div:hover{  
+    box-shadow: 0px 4px 7px 1px rgb(23 24 23 / 31%);
+    transform: translate(1px,-2px);
+  }
+  .about-section h1 {
+      /*font-size: 2em;
+      margin-bottom: 30px;*/
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: 0.1rem;
+  }
+  .about-section p {
+    font-size: 1em;
+    font-family: 'Source Serif Pro', serif;
+    color: black;
+    font-weight: bolder;
+  }
+  .about-section-img-mobile {
+    display:block;
+    z-index: 1;
+    background: url("../../assets/img/onama-mobilna.jpg");
+    position: relative;
+    top: 19%;
+    left: 46%;
+    bottom: 22%;
+    background-size: cover;
+    width: 20vh;
+    height: 20vh;
+  }
+  .about-section {
+    background: repeating-radial-gradient(#ffffff, #7e7272 916px);
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .about-container {
+    max-width:75%;
+  }
+  .about-section p {
+    font-size: 2em;
+  }
+  .about-section h1{
+    font-size: 3em;
+  }
+}
+  
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 0.85;}
+}
+  
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 0.85;}
+} 
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+ 

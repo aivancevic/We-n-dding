@@ -1,0 +1,138 @@
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1{
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+input{
+  text-align: center;
+}
+img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.card_image{
+  width: 100%;
+  height: auto;
+}
+.cards_item {
+  padding: 1rem;
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background-color: white;
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+.card-glazba:hover{
+  -webkit-box-shadow: 0 5px 10px #271366;
+  box-shadow: 0 5px 10px #271366;
+}
+.card-prostor:hover{
+  -webkit-box-shadow: 0 5px 10px #bb9a5b;
+  box-shadow: 0 5px 10px #bb9a5b;
+}
+.card-catering:hover{
+  -webkit-box-shadow: 0 5px 10px #4e2d4e;
+  box-shadow: 0 5px 10px #4e2d4e;
+}
+.card-dekoracija:hover{
+  -webkit-box-shadow: 0 5px 10px #ab4141;
+  box-shadow: 0 5px 10px #ab4141;
+}
+.card-media:hover{
+  -webkit-box-shadow: 0 5px 10px #297c7c;
+  box-shadow: 0 5px 10px #297c7c;
+}
+.card-ostalo:hover{
+  -webkit-box-shadow: 0 5px 10px #503333;
+  box-shadow: 0 5px 10px #503333;
+}
+.card_content {
+  padding: 1rem;
+}
+.glazba{
+  background: linear-gradient(to bottom left, #33658a 40%, #271366 100%);
+}
+.prostor{
+  background: linear-gradient(to bottom left, #bb9a5b 40%, #fed485 100%);
+}
+.catering{
+  background: linear-gradient(to bottom left, #4e2d4e  40%, #000000 100%);
+}
+.dekoracija{
+  background: linear-gradient(to bottom left, #df9799 40%, #ab4141 100%);
+}
+.media{
+  background: linear-gradient(to bottom left, #297c7c 40%, #32312e 100%);
+}
+.ostalo{
+  background: linear-gradient(to bottom left, #503333 40%, #000000 100%);
+}
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;    
+  font-weight: 400;
+  text-align: end;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}

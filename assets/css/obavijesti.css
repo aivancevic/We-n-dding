@@ -1,0 +1,93 @@
+.obavijesti-section {
+    height: 84vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    animation-duration: 5s;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .obavijesti-section-container-item {
+    background-image: linear-gradient(45deg, #ddd7cf, #d6bd9c);
+    padding: 10px;
+    margin: 3vw 2%;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 19%), 0 2px 4px 0 rgb(0 0 0 / 32%);
+    transition: all 0.8s ease-out 0s;
+    border-radius: 15px;
+  }
+  .obavijesti-section-container-item:hover {
+    transition: all 0.2s ease-out 0s;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 19%), 0 3px 4px 0 rgb(0 0 0 / 32%);
+  }
+
+.obavijesti-h1 {
+    z-index: 3;
+    font-family: "Source Serif Pro", serif;
+    color: #666363;
+    -webkit-text-stroke: thin;
+    margin: auto 0;
+    padding: 3%;
+    position: sticky;
+    top: -1px;
+    background: white;
+    display: block;
+    --temp: 0 3px 8px -6px black;
+    -webkit-box-shadow: var(--temp);
+    -moz-box-shadow: var(--temp);
+    box-shadow: var(--temp);
+  }
+
+  .obavijesti-section-container-item em,
+.obavijesti-section-container-item-title {
+  display: inline-block;
+  font-family: "Source Serif Pro", serif;
+  font-weight: bolder;
+  color: white;
+}
+.obavijesti-section-container-item em{
+  padding-left: 1px;
+  margin: 8px auto;
+}
+.obavijesti-section-container-item-title {
+  color: black;
+}
+.obavijesti-section-container-item-details {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: end;
+  margin-left: 40%;
+}
+
+@media (max-width: 584px) {
+  .obavijesti-section-container-item-details {
+    flex-direction: column;
+    flex-direction: column;
+    margin-left: 26vw;
+    padding: 2px;
+  }
+  .obavijesti-section-container-item {
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 19%), 0 2px 4px 0 rgb(0 0 0 / 32%);
+    width: 90%;
+    display: inline-block;
+    font-size: small;
+    margin: 2vw 12px;
+  }
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px black;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 10px;
+  border-style: double;
+  border-width: 6px;
+  border: 6px double #e5e5b07a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e5e5b07a;
+}

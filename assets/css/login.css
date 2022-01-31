@@ -1,0 +1,172 @@
+.login-container {
+  color: #707070;
+  background-image: linear-gradient(45deg, #ddd7cf, #d6bd9c);
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 84vh;
+}
+.login-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form > span {
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.input-username,
+.input-password {
+  border: 0;
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  border: 2px solid #707070;
+  padding: 14px 10px;
+  width: 22rem;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.input-username:focus,
+.input-password:focus {
+  width: 27rem;
+  border-color: #EF8D9C;
+}
+.input-btn {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  border: 2px solid #707070;
+  padding: 14px 40px;
+  outline: none;
+  color: #707070;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.input-btn:hover {
+  background: white;
+}
+.register {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.login-box p{
+  margin: 12px 0px;
+}
+.login-box p a{
+  color: #524f4f;
+  font-weight: 600;
+}
+#login_form  .error_small{
+  color:rgb(155, 22, 22);
+}
+
+/* RESPONSIVE */
+@media(max-width: 426px){
+  form > span{
+    font-size: .7rem;
+  }
+  .input-username, .input-password{
+    width: 18rem;
+    font-size: .6rem;
+  }
+  .input-username:focus,
+  .input-password:focus {
+    width: 22rem;
+  }
+  .input-btn{
+    font-size: 12px;
+  }
+  .login-box p{
+    font-size: .8rem;
+  }
+}
+
+@media(max-width: 376px){
+  form > span{
+    font-size: .65rem;
+  }
+  .input-username, .input-password{
+    width: 17rem;
+    font-size: .55rem;
+  }
+  .input-username:focus,
+  .input-password:focus {
+    width: 21rem;
+  }
+  .input-btn{
+    font-size: 10px;
+  }
+  .login-box p{
+    font-size: .75rem;
+  }
+}
+
+@media(max-width: 321px){
+  form > span{
+    font-size: .55rem;
+  }
+  .input-username, .input-password{
+    width: 15rem;
+    font-size: .45rem;
+  }
+  .input-username:focus,
+  .input-password:focus {
+    width: 19rem;
+  }
+  .input-btn{
+    font-size: 9px;
+  }
+  .login-box p{
+    font-size: .65rem;
+  }
+}
+
+@media(max-width: 299px){
+  form > span{
+    font-size: .40rem;
+  }
+  .input-username, .input-password{
+    width: 13.5rem;
+    font-size: .40rem;
+  }
+  .input-username:focus,
+  .input-password:focus {
+    width: 17rem;
+  }
+  .input-btn{
+    font-size: 8px;
+  }
+  .login-box p{
+    font-size: .50rem;
+  }
+}

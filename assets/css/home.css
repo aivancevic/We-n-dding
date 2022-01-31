@@ -1,0 +1,140 @@
+@import './oNama.css';
+
+.bannerImage{
+    width: 100%;
+    height: 92vh;
+    background-image: url('../img/homepage-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.containerItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #707070;
+}
+h1{
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: .5rem;
+  margin-bottom: 30px;
+}
+hr{
+  width: 45%;
+  border-style: solid;
+  border-color: #707070;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  height: 2px;
+  border: none;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #707070));
+}
+h2{
+  font-size: 36px;
+  font-weight: 100;
+  letter-spacing: .3rem;
+}
+.home-input-btn {
+  border: 2px;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5rem;
+  border: 2px solid;
+  padding: 14px 40px;
+  outline: none;
+  color: #707070;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.home-input-btn:hover {
+  background: #f0edeca2;
+}
+.box-3 { 
+  background-color: #9187805e;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+.btn-three {
+  color: #ffff;
+  transition: all 0.5s;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-radius: 25px;
+  border: 1px solid #ffff;
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.box-3 a{
+  text-decoration: none;
+}
+  
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 10vw;
+  }
+  h2{
+    font-size: 6vw;
+  }
+  .bannerImage{
+    background-image: url('../img/homepage-background.jpg');
+    background-position: 60% center;
+    background-repeat: no-repeat;
+    background-size: 410%;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,115 @@
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  height: 8vh;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+header .navbar ul{
+  list-style: none;
+}
+header .navbar li{
+  position: relative;
+  float: left;
+}
+header .navbar li a{
+  font-size: 20px;
+  padding: 1.5625rem;
+  color: #886a43;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+header .navbar li a:hover{
+  color: #eb7e36a6;
+  transition: all 0.3s ease 0s;
+}
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial
+}
+.burger{
+  display: none;
+  text-decoration: none;
+  color: #886a43;
+}
+header label{
+  font-size: 20px;
+  color: #886a43;
+  cursor: pointer;
+  display: none;
+}
+.navbar-container{
+  transition: all 0.5s;
+}
+.opacity-active{
+  opacity: .5;
+  transition: all 0.5s;
+}
+.opacity-active:hover{
+opacity: 1;
+transition: all 0.5s;
+}
+
+@media(max-width: 1100px){
+  header{
+    padding: 20px;
+  }
+  header label{
+    display: initial;
+  }
+  header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,.1);
+    display: none;
+  }
+  header .navbar li a{
+    font-size: 15px;
+    padding: 1.2rem;
+  }
+  header .navbar ul li{
+    width: 100%;
+  }
+  header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li{
+    background: #eee;
+  }
+  .burger{
+    display: initial;
+  }
+}
+
+noscript{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  position: relative;
+  font-size: 1.2em;
+}
